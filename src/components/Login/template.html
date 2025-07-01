@@ -1,3 +1,8 @@
 <div class="">
     <input :type="type" ref="inputRef">
+    <h1>{{message}}</h1>
+    <h2 v-for="(data,index) in arr1" :key="index">{{data}}</h2>
+    <button @click="$emit('myEvent','data sent from child')">Send data to parent</button>
+    <button class="" v-on:click="senddatatoparent('Hi bro')">Send second ddata</button>
+    <button class="" @click="send3data">Send 3rd data</button>
 </div>

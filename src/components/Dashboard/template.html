@@ -1,4 +1,9 @@
 <div>
     Hiii
     <div v-for="(data,index) in arr" v-bind:key="index">{{data}}</div>
+    <LoginPage :message :arr1  @myEvent="handleMyEvent" @data="datafromchild"/>
+      <h1>{{ receivedMessage }}</h1>
+      <h1>{{ test2 }}</h1>
+    <div class=""><button  @click="mainstore.increasecount">+</button> <h1>{{mainstore.count}}</h1> <button @click="mainstore.decreasecount">-</button> </div> 
+
 </div>
